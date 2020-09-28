@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F42319B4A08BAD5B2BF32D /* Pods_RandomPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540C751C6F24F22B8F37B11 /* Pods_RandomPhoto.framework */; };
+		B026BCDD24A53E3E0032BB64 /* ImageNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026BCDC24A53E3E0032BB64 /* ImageNetworking.swift */; };
 		B0F871EB24A14FCA0037098E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F871EA24A14FCA0037098E /* AppDelegate.swift */; };
 		B0F871ED24A14FCA0037098E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F871EC24A14FCA0037098E /* SceneDelegate.swift */; };
 		B0F871EF24A14FCA0037098E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F871EE24A14FCA0037098E /* ViewController.swift */; };
@@ -14,9 +16,13 @@
 		B0F871F524A14FCA0037098E /* RandomPhoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0F871F324A14FCA0037098E /* RandomPhoto.xcdatamodeld */; };
 		B0F871F724A14FCE0037098E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F871F624A14FCE0037098E /* Assets.xcassets */; };
 		B0F871FA24A14FCE0037098E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F871F824A14FCE0037098E /* LaunchScreen.storyboard */; };
+		B0F8720424A1B1060037098E /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F8720324A1B1060037098E /* ImageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0540C751C6F24F22B8F37B11 /* Pods_RandomPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDBBF26934FBF476C617DD6 /* Pods-RandomPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPhoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		B026BCDC24A53E3E0032BB64 /* ImageNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworking.swift; sourceTree = "<group>"; };
 		B0F871E724A14FCA0037098E /* RandomPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F871EA24A14FCA0037098E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F871EC24A14FCA0037098E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		B0F871F624A14FCE0037098E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F871F924A14FCE0037098E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F871FB24A14FCE0037098E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F8720324A1B1060037098E /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		F4A1319D12B0BF6A33BD5EEF /* Pods-RandomPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPhoto.release.xcconfig"; path = "Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F42319B4A08BAD5B2BF32D /* Pods_RandomPhoto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5093FC89C0D0603BEB545B50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0540C751C6F24F22B8F37B11 /* Pods_RandomPhoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F66AB5D6AC130675E87CBFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDBBF26934FBF476C617DD6 /* Pods-RandomPhoto.debug.xcconfig */,
+				F4A1319D12B0BF6A33BD5EEF /* Pods-RandomPhoto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B0F871DE24A14FCA0037098E = {
 			isa = PBXGroup;
 			children = (
 				B0F871E924A14FCA0037098E /* RandomPhoto */,
 				B0F871E824A14FCA0037098E /* Products */,
+				6F66AB5D6AC130675E87CBFC /* Pods */,
+				5093FC89C0D0603BEB545B50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +88,40 @@
 			children = (
 				B0F871EA24A14FCA0037098E /* AppDelegate.swift */,
 				B0F871EC24A14FCA0037098E /* SceneDelegate.swift */,
-				B0F871EE24A14FCA0037098E /* ViewController.swift */,
-				B0F871F024A14FCA0037098E /* Main.storyboard */,
+				B0F8720524A1B10A0037098E /* Model */,
+				B0F8720124A176000037098E /* View */,
+				B0F8720224A176070037098E /* Controller */,
 				B0F871F624A14FCE0037098E /* Assets.xcassets */,
 				B0F871F824A14FCE0037098E /* LaunchScreen.storyboard */,
 				B0F871FB24A14FCE0037098E /* Info.plist */,
 				B0F871F324A14FCA0037098E /* RandomPhoto.xcdatamodeld */,
 			);
 			path = RandomPhoto;
+			sourceTree = "<group>";
+		};
+		B0F8720124A176000037098E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0F871F024A14FCA0037098E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0F8720224A176070037098E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0F871EE24A14FCA0037098E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B0F8720524A1B10A0037098E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0F8720324A1B1060037098E /* ImageData.swift */,
+				B026BCDC24A53E3E0032BB64 /* ImageNetworking.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0F871FE24A14FCE0037098E /* Build configuration list for PBXNativeTarget "RandomPhoto" */;
 			buildPhases = (
+				200589C1B17EECD6A7D8904E /* [CP] Check Pods Manifest.lock */,
 				B0F871E324A14FCA0037098E /* Sources */,
 				B0F871E424A14FCA0037098E /* Frameworks */,
 				B0F871E524A14FCA0037098E /* Resources */,
+				A830F4B467790F31C49A123F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +192,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		200589C1B17EECD6A7D8904E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomPhoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A830F4B467790F31C49A123F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0F871E324A14FCA0037098E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +243,8 @@
 				B0F871EB24A14FCA0037098E /* AppDelegate.swift in Sources */,
 				B0F871ED24A14FCA0037098E /* SceneDelegate.swift in Sources */,
 				B0F871F524A14FCA0037098E /* RandomPhoto.xcdatamodeld in Sources */,
+				B0F8720424A1B1060037098E /* ImageData.swift in Sources */,
+				B026BCDD24A53E3E0032BB64 /* ImageNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +386,13 @@
 		};
 		B0F871FF24A14FCE0037098E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDBBF26934FBF476C617DD6 /* Pods-RandomPhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BUYY6MV74S;
 				INFOPLIST_FILE = RandomPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +406,13 @@
 		};
 		B0F8720024A14FCE0037098E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A1319D12B0BF6A33BD5EEF /* Pods-RandomPhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BUYY6MV74S;
 				INFOPLIST_FILE = RandomPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,16 +9,40 @@
 import Foundation
 
 
-struct ImageData : Codable {
-    let id : String = ""
-    let alt_description : String = ""
-    let likes : Int = 0
-    let urls : [ ImageURL ]
+struct ImageID : Codable {
+    let likes : Int
+    let alt_description : String 
+    let urls : ImageRaw
+    
+    enum CodingKeys : String, CodingKey {
+        case likes = "likes"
+        case alt_description = "alt_description"
+        case urls = "urls"
+    }
 }
 
-struct ImageURL : Codable {
-    let raw : String = ""
+//struct ImageLikes : Decodable {
+//    let likes : Int = 0
+//
+//
+//struct ImageDescription : Decodable {
+//    let alt_description : String = ""
+//}
+//
+//struct ImageURL : Decodable {
+//    let urls : [ ImageURL ]
+//}
+//
+
+struct ImageRaw : Codable {
+    let small : String
+    
+    enum CodingKeys : String, CodingKey {
+        case small = "small"
+    }
 }
+
+
 
 
 
